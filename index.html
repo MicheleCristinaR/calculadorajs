@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="utf-8">             
+   <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Calculadora</title>
+
+  </head>
+  <body>
+    
+    <div id="calc">
+      <h3>Calculadora</h3>
+      <input id="resultado" type="text" onkeypress="onTeclando(event)">
+        <div>
+          <table>
+            <tbody><tr>
+               <td><button id="btnlimpar" type="button" class="botoes" onclick="limpaTudo()">CE</button></td>
+              <td><button id="btndel" type="button" class="botoes" onclick="limpaUltimo()">&lt;</button></td>
+              
+               <td><button id="btndividir" type="button" class="botoes" onclick="pegaValorClick('/')">/</button></td>
+               <td><button id="btnmultiplicar" type="button" class="botoes" onclick="pegaValorClick('*')">x</button></td>
+            </tr>
+           <tr>
+             <td><button id="btn7" type="button" class="botoes" onclick="pegaValorClick('7')">7</button></td>
+             <td><button id="btn8" type="button" class="botoes" onclick="pegaValorClick('8')">8</button></td>
+             <td><button id="btn9" type="button" class="botoes" onclick="pegaValorClick('9')">9</button></td>           
+             <td><button id="btnsoma" type="button" class="botoes" onclick="pegaValorClick('+')">+</button></td>
+           </tr>
+              <tr>
+            <td><button id="btn4" type="button" class="botoes" onclick="pegaValorClick('4')">4</button></td>
+            <td><button id="btn5" type="button" class="botoes" onclick="pegaValorClick('5')">5</button></td>
+            <td><button id="btn6" type="button" class="botoes" onclick="pegaValorClick('6')">6</button></td>
+            <td><button id="btnsubtracao" type="button" class="botoes" onclick="pegaValorClick('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button id="btn1" type="button" class="botoes" onclick="pegaValorClick('1')">1</button></td>
+            <td><button id="btn2" type="button" class="botoes" onclick="pegaValorClick('2')">2</button></td>
+            <td><button id="btn3" type="button" class="botoes" onclick="pegaValorClick('3')">3</button></td>
+            <td rowspan="2"><button id="btncalcular" type="button" class="botoes" style="height:103px;" onclick="calculoClick()">=</button></td>
+            
+          </tr>
+            <tr>
+            <td colspan="2"><button id="btn0" type="button" class="botoes" style="width:105px">0</button></td>
+            <td><button id="btnponto" type="button" class="botoes">.</button></td>
+            
+          </tr>
+          </tbody></table>
+    
+    </div>
+                         
+    <script src="sketch.js"></script>
+  
+
+</div></body></html>
