@@ -9,7 +9,7 @@
     
     <div id="calc">
       <h3>Calculadora</h3>
-      <input id="resultado" type="text" onkeypress="onTeclando(event)">
+      <input id="resultado" type="text" onkeypress="return event.charCode >= 42 && event.charCode <= 57" >
         <div>
           <table>
             <tbody><tr>
@@ -40,7 +40,7 @@
           </tr>
             <tr>
             <td colspan="2"><button id="btn0" type="button" class="botoes" style="width:105px">0</button></td>
-            <td><button id="btnponto" type="button" class="botoes">.</button></td>
+            <td><button id="btnponto" type="button" class="botoes" onclick="pegaValorClick('.')">.</button></td>
             
           </tr>
           </tbody></table>
